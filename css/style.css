@@ -1,0 +1,107 @@
+/* FILEPATH: /c:/Users/anton.angervall/Desktop/webbutveckling/24wuab/css/style.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  padding: 12px;
+  height: 100vh;
+}   
+#wrapper {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15% 10% 45% 15% 15%;
+    grid-template-areas: 
+    'logga nav nav'   
+    '. . .'
+    'box1 box2 box3'
+    '. . .'
+    'ft ft ft'
+    ;
+}
+
+.logga {
+    grid-area: logga;
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+nav {
+    grid-area: nav;
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+}
+nav ul li {
+    border-radius: 20px;
+    height: 50px;
+    width: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li:nth-child(1) {
+background-color: red;
+
+}
+
+nav ul li:nth-child(2) {
+background-color: blue;
+}
+
+nav ul li:nth-child(3) {
+background-color: green;
+}
+
+nav ul li:nth-child(4) {
+background-color: yellow;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+
+
+.box1 {
+    grid-area: box1;
+    background-color: red;
+}
+
+
+.box2 {
+    grid-area: box2;
+    background-color: blue;
+}
+
+
+.box3 {
+    grid-area: box3;
+    background-color: green;    
+}
+
+.ft {
+    grid-area: ft;
+    background-color: yellow;
+}
