@@ -71,8 +71,9 @@ body {
          gap: 15px;
    }
 
-
 }
+
+
 
 .logga{
     grid-area: logga;
@@ -214,19 +215,19 @@ a:hover {
     margin-left: 10px;
 }
 
-.box1 {
+.boxhem1 {
     grid-area: box1;
     background-color: red;
 }
 
 
-.box2 {
+.boxhem2 {
     grid-area: box2;
     background-color: blue;
 }
 
 
-.box3 {
+.boxhem3 {
     grid-area: box3;
     background-color: green;    
 }
@@ -234,9 +235,12 @@ a:hover {
 .ft {
     grid-area: ft;
     background-color: lightblue;
+    border-radius: 20px;
+    margin-top: 5px;
+
 }
 
-button {
+.fot {
     background-color: aqua  ;
     color: black;
     border: none;
@@ -245,10 +249,16 @@ button {
     font-size: 16px;
     cursor: pointer;
     margin: 25px 250px;
+    
 }
 
-button:hover {
-    background-color: blue;
+#father{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
 }
 
 header {
@@ -261,45 +271,131 @@ header {
     justify-content: center;
     height: 200px;
     width: 100%;
-
+    margin-bottom: 5px;
 }
+
 .omoss1{
+    text-align: center;
     width: 50%;
     height: 100%;
-    background-color: lightgreen;
+    background-color: lightblue;
     border-radius: 20px;
 }
 
 
-
-     
-
 .omossbox2 {
-    background-color: blue;
+    background-color: lightblue;
     height: 200px;
     width: 200px;  
     border-radius: 10%;
+    overflow: hidden;
+}
 
+.omossbox2 p {
+    font-size: 14.6px;
+    margin: 0;
 }
-#father{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 10%;
-}
+
 .omossbox3 {
-    background-color: green;
+    background-color: lightblue;
     height: 200px;
     width: 200px;
     border-radius: 10%;
+    overflow: hidden;
+}
+
+.omossbox3 p {
+    font-size: 14.6px;
+    margin: 0;
 }
 
 .omossbox4 {
     display: flex;
     flex-wrap: wrap;
-    background-color: red;
+    background-color: lightblue;
     height: 200px;
     width: 200px;
     border-radius: 10%;
+    overflow: hidden;
 }
+
+#lasmer1 {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 12%;
+    width: 7%;
+    border-radius: 20%;
+    top: 87%;
+    right: 69%;
+}
+
+#lasmer1 p {
+    font-size: 14.6px;
+    font-weight: oblique;
+    text-align: center;;
+}
+
+#lasmer1:hover {
+    color: blue;
+}
+.år {
+    width: 100%;
+}
+
+
+#lasmer2 {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 12%;
+    width: 7%;
+    border-radius: 20%;
+    top: 87%;
+    right: 43%;
+}
+
+#lasmer2 p {
+    font-size: 14.6px;
+    font-weight: oblique;
+    text-align: center;
+}
+
+#lasmer2:hover {
+    color: blue;
+}
+
+.allsvenskan {
+    width: 100%;
+}
+
+#lasmer3 {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 12%;
+    width: 7%;
+    border-radius: 20%;
+    top: 87%;
+    right: 17%;
+}
+
+#lasmer3 p {
+    font-size: 14.6px;
+    font-weight: oblique;
+    text-align: center;
+}
+
+#lasmer3:hover {
+    color: blue;
+}
+
+.sponsorer {
+    width: 100%;
+}
+
+
+
+
+
+   
