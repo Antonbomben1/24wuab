@@ -41,6 +41,10 @@ body {
 }
 
 
+
+
+
+
 @media screen and (max-width: 500px) {
     #wrapper{
         display: grid;
@@ -71,6 +75,68 @@ body {
          gap: 15px;
    }
 
+   #wrapper3{
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: 10% 20% 45% 45% 45%;
+       grid-template-areas: 
+       'logga'
+       'nav'
+       'iteam1'
+       'iteam2'
+       'ft'
+       ;
+
+         gap: 15px;
+
+         #lasmer1{
+            display: flex;
+            justify-content: center;
+            margin-top: 225px;
+        }
+        .ft{height: 40%;
+        }
+        
+        #lasmer1 p{font-size: 10px;}
+        #lasmer2{
+            display: flex;
+            justify-content: center;
+            margin-top: 440px;
+        }
+        #lasmer2 p{font-size: 10px;}
+
+        #lasmer3{
+            display: flex;
+            justify-content: center;
+            margin-top: 220px;
+        }
+
+        #lasmer3 p{font-size: 10px;}
+        #popup{font-size: 13px;}
+        
+        
+   }
+
+    #wrapper4{
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: 15% 35% 35% 15%;
+         grid-template-areas: 
+         'logga'
+         'nav'
+         'iteam1'
+         'iteam2'
+         'ft'
+         'ft'
+         ;
+            nav{margin-top: 70px;}
+            .fot{margin: 7%;}
+            .shop2 p {font-size: 10.5px;}
+            .shop1 img{width: 250%;}   
+            .shop3 p{display: none;} 
+
+            
+    }
 }
 
 
@@ -86,9 +152,6 @@ body {
 .logga img{
     width: 200px;
     border-radius: 20px;
-
-    
- 
 }
  
 nav {
@@ -203,10 +266,24 @@ a:hover {
     margin-left: 5px;
 }
 
+.box_event1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+
 .box_event2 {
     grid-area: box2;
     background-color: yellow;
     margin-left: 5px;
+}
+
+.box_event2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
 }
 
 .box_event3 {
@@ -215,22 +292,29 @@ a:hover {
     margin-left: 10px;
 }
 
+.box_event3 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
 .boxhem1 {
     grid-area: box1;
     background-color: red;
-}
 
+}
 
 .boxhem2 {
     grid-area: box2;
-    background-color: blue;
+    background-color: green;
 }
 
 
 .boxhem3 {
     grid-area: box3;
-    background-color: green;    
+    background-color: blue;
 }
+
 
 .ft {
     grid-area: ft;
@@ -393,6 +477,86 @@ header {
 .sponsorer {
     width: 100%;
 }
+
+#wrapper4 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15% 35% 35% 15%;
+    grid-template-areas: 
+    'logga nav nav'   
+    'iteam1 iteam1 iteam1'
+    'iteam2 iteam2 iteam2'
+    'ft ft ft'
+    ;
+}
+
+.shop1{
+    grid-area: iteam1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 100%;
+    width: 25%;
+    margin-left: 35%
+}
+
+.shop1 img{
+    height: 100%;
+    width: 120%;
+    border-radius: 20px;
+}
+.shop1 img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    
+}
+
+.shop2 {
+    grid-area: iteam2;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    width: 48%;
+    margin-left: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+
+}
+.shop2 p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 2%;
+}
+
+.shop3 {
+    grid-area: iteam2;
+    width: 48%;
+    height: 100%;
+    display: flex;
+    }
+
+.shop3 img {
+    border-radius: 20px;
+    height: 100%;
+}
+.shop3 img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+    
+
+.shop3 p{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    border-radius: 20px;
+}
+
 
 
 
