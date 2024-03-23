@@ -262,8 +262,9 @@ a:hover {
 
 .box_event1 {
     grid-area: box1;
-    background-color: purple;
     margin-left: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    text-align: center;
 }
 
 .box_event1 img {
@@ -276,8 +277,9 @@ a:hover {
 
 .box_event2 {
     grid-area: box2;
-    background-color: yellow;
     margin-left: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    text-align: center;
 }
 
 .box_event2 img {
@@ -288,8 +290,9 @@ a:hover {
 
 .box_event3 {
     grid-area: box3;
-    background-color: gray;
     margin-left: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    text-align: center;
 }
 
 .box_event3 img {
@@ -300,19 +303,63 @@ a:hover {
 
 .boxhem1 {
     grid-area: box1;
-    background-color: red;
-
 }
+.boxhem1 img{
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+    margin: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+.boxhem1 p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 2%;
+}
+
 
 .boxhem2 {
     grid-area: box2;
-    background-color: green;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+.boxhem2 p {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: 2%;
 }
 
 
 .boxhem3 {
     grid-area: box3;
-    background-color: blue;
+    display: flex;
+}
+
+.boxhem3 img {
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+    margin: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+.boxhem3 p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 2%;
+}
+
+.boxhem3 a {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 2%;
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -362,10 +409,15 @@ header {
     text-align: center;
     width: 50%;
     height: 100%;
-    background-color: lightblue;
     border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    ;
 }
 
+.omoss1 img{
+    height: 100%;
+    border-radius: 20px;
+}
 
 .omossbox2 {
     background-color: lightblue;
