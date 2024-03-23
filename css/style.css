@@ -101,14 +101,16 @@ body {
         #lasmer2{
             display: flex;
             justify-content: center;
-            margin-top: 440px;
+            margin-top: 225px;
+            margin-right: -150px;
         }
         #lasmer2 p{font-size: 10px;}
 
         #lasmer3{
             display: flex;
             justify-content: center;
-            margin-top: 220px;
+            margin-top: 440px;
+            margin-right: 150px;
         }
 
         #lasmer3 p{font-size: 10px;}
