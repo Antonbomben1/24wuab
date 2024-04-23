@@ -2,26 +2,27 @@
 
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  box-sizing: border-box;
-  padding: 12px;
-  height: 100vh;
-  background-image:url(../img/cool-background.png);
-  background-size: cover;
-}   
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    padding: 12px;
+    height: 100vh;
+    background-image: url(../img/cool-background.png);
+    background-size: cover;
+}
+
 #wrapper {
     display: grid;
     width: 100%;
     height: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 15% 10% 45% 15% 15%;
-    grid-template-areas: 
-    'logga nav nav'   
-    '. . .'
-    'box1 box2 box3'
-    '. . .'
-    'ft ft ft'
+    grid-template-areas:
+        'logga nav nav'
+        '. . .'
+        'box1 box2 box3'
+        '. . .'
+        'ft ft ft'
     ;
 }
 
@@ -31,12 +32,12 @@ body {
     height: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 15% 10% 45% 15% 15%;
-    grid-template-areas: 
-    'logga nav nav'   
-    '. . .'
-    'box1 box2 box3'
-    '. . .'
-    'ft ft ft'
+    grid-template-areas:
+        'logga nav nav'
+        '. . .'
+        'box1 box2 box3'
+        '. . .'
+        'ft ft ft'
     ;
 }
 
@@ -46,104 +47,133 @@ body {
 
 
 @media screen and (max-width: 500px) {
-    #wrapper{
+    #wrapper {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 10% 20% 45% 45% 45%;
-        grid-template-areas: 
-        'logga'
-        'nav'
-        'box1'
-        'box2'
-        'box3'
-        'ft'
+        grid-template-areas:
+            'logga'
+            'nav'
+            'box1'
+            'box2'
+            'box3'
+            'ft'
         ;
         gap: 15px;
-    }   
-   #wrapper2{
-       display: grid;
-       grid-template-columns: 1fr;
-       grid-template-rows: 10% 20% 45% 45% 45%;
-       grid-template-areas: 
-       'logga'
-       'nav'
-       'box1'
-       'box2'
-       'box3'
-       'ft'
-       ;
-         gap: 15px;
-   }
+    }
 
-   #wrapper3{
-       display: grid;
-       grid-template-columns: 1fr;
-       grid-template-rows: 10% 20% 45% 45% 45%;
-       grid-template-areas: 
-       'logga'
-       'nav'
-       'iteam1'
-       'iteam2'
-       'ft'
-       ;
+    #wrapper2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 20% 45% 45% 45%;
+        grid-template-areas:
+            'logga'
+            'nav'
+            'box1'
+            'box2'
+            'box3'
+            'ft'
+        ;
+        gap: 15px;
+    }
 
-         gap: 15px;
+    #wrapper3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 20% 45% 45% 45%;
+        grid-template-areas:
+            'logga'
+            'nav'
+            'iteam1'
+            'iteam2'
+            'ft'
+        ;
 
-         #lasmer1{
-            display: flex;
-            justify-content: center;
-            margin-top: 225px;
-        }
-        .ft{height: 40%;
-        }
-        
-        #lasmer1 p{font-size: 10px;}
-        #lasmer2{
-            display: flex;
-            justify-content: center;
-            margin-top: 225px;
-            margin-right: -150px;
-        }
-        #lasmer2 p{font-size: 10px;}
+        gap: 15px;
 
-        #lasmer3{
-            display: flex;
-            justify-content: center;
-            margin-top: 440px;
-            margin-right: 150px;
-        }
+    }
 
-        #lasmer3 p{font-size: 10px;}
-        #popup{font-size: 13px;}
-        
-        
-   }
+    #lasmer1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 225px;
+    }
 
-    #wrapper4{
-         display: grid;
-         grid-template-columns: 1fr;
-         grid-template-rows: 15% 35% 35% 15%;
-         grid-template-areas: 
-         'logga'
-         'nav'
-         'iteam1'
-         'iteam2'
-         'ft'
-         'ft'
-         ;
-            nav{margin-top: 70px;}
-            .fot{margin: 7%;}
-            .shop2 p {font-size: 10.5px;}
-            .shop1 img{width: 250%;}   
-            .shop3 p{display: none;} 
+    .ft {
+        height: 40%;
+    }
 
-            
+    #lasmer1 {
+        font-size: 10px;
+    }
+
+    #lasmer2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 225px;
+        margin-right: -150px;
+    }
+
+    #lasmer2 p {
+        font-size: 10px;
+    }
+
+    #lasmer3 {
+        display: flex;
+        justify-content: center;
+        margin-top: 440px;
+        margin-right: 150px;
+    }
+
+    #lasmer3 p {
+        font-size: 10px;
+    }
+
+    #popup {
+        font-size: 13px;
+    }
+
+
+    #wrapper4 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15% 35% 35% 15%;
+        grid-template-areas:
+            'logga'
+            'nav'
+            'iteam1'
+            'iteam2'
+            'ft'
+            'ft'
+        ;
+    }
+
+    nav {
+        margin-top: 70px;
+    }
+
+    .fot {
+        margin: 7%;
+    }
+
+    .shop2 p {
+        font-size: 10.5px;
+    }
+
+    .shop1 img {
+        width: 250%;
+    }
+
+    .shop3 p {
+        display: none;
     }
 }
 
 
 
-.logga{
+
+
+.logga {
     grid-area: logga;
     width: 100%;
     height: 100%;
@@ -151,15 +181,16 @@ body {
     align-items: center;
 }
 
-.logga img{
+.logga img {
     width: 200px;
     border-radius: 20px;
 }
- 
+
 nav {
     grid-area: nav;
     width: 100%;
 }
+
 nav ul {
     display: flex;
     justify-content: right;
@@ -169,6 +200,7 @@ nav ul {
     width: 100%;
     padding: 0;
 }
+
 nav ul li {
     border-radius: 20px;
     height: 50px;
@@ -190,11 +222,11 @@ nav ul li a {
 }
 
 a:hover {
-    color: aqua;  
+    color: aqua;
     border-radius: 20px;
 }
 
-.box{
+.box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -204,7 +236,7 @@ a:hover {
     width: 95%;
 }
 
-.boxwrapper{
+.boxwrapper {
     width: 100%;
     height: 100%;
 }
@@ -225,6 +257,7 @@ a:hover {
     0% {
         transform: rotateY(0deg);
     }
+
     100% {
         transform: rotateY(180deg);
     }
@@ -252,13 +285,13 @@ a:hover {
     display: none;
 }
 
-.turnfunktion:hover > .box > .content {
+.turnfunktion:hover>.box>.content {
     display: block;
     visibility: visible;
     animation: turn-text 0.5s linear;
 }
 
-.turnfunktion:hover > .box > p {
+.turnfunktion:hover>.box>p {
     display: none;
 }
 
@@ -306,7 +339,8 @@ a:hover {
 .boxhem1 {
     grid-area: box1;
 }
-.boxhem1 img{
+
+.boxhem1 img {
     width: 50%;
     height: 50%;
     border-radius: 20px;
@@ -374,7 +408,7 @@ a:hover {
 }
 
 .fot {
-    background-color: aqua  ;
+    background-color: aqua;
     color: black;
     border: none;
     padding: 10px 20px;
@@ -382,10 +416,10 @@ a:hover {
     font-size: 16px;
     cursor: pointer;
     margin: 25px 250px;
-    
+
 }
 
-#father{
+#father {
     display: flex;
     position: relative;
     flex-wrap: wrap;
@@ -399,7 +433,7 @@ header {
     align-items: center;
 }
 
-.omossbox1{
+.omossbox1 {
     display: flex;
     justify-content: center;
     height: 200px;
@@ -407,7 +441,7 @@ header {
     margin-bottom: 5px;
 }
 
-.omoss1{
+.omoss1 {
     text-align: center;
     width: 50%;
     height: 100%;
@@ -416,7 +450,7 @@ header {
     ;
 }
 
-.omoss1 img{
+.omoss1 img {
     height: 100%;
     border-radius: 20px;
 }
@@ -424,7 +458,7 @@ header {
 .omossbox2 {
     background-color: lightblue;
     height: 200px;
-    width: 200px;  
+    width: 200px;
     border-radius: 10%;
     overflow: hidden;
 }
@@ -468,15 +502,16 @@ header {
     right: 69%;
 }
 
-#lasmer1 p {
+#lasmer1 {
     font-size: 14.6px;
-    font-weight: oblique;
-    text-align: center;;
+    text-align: center;
+    ;
 }
 
 #lasmer1:hover {
     color: blue;
 }
+
 .år {
     width: 100%;
 }
@@ -493,9 +528,8 @@ header {
     right: 43%;
 }
 
-#lasmer2 p {
+#lasmer2 {
     font-size: 14.6px;
-    font-weight: oblique;
     text-align: center;
 }
 
@@ -518,9 +552,8 @@ header {
     right: 17%;
 }
 
-#lasmer3 p {
+#lasmer3 {
     font-size: 14.6px;
-    font-weight: oblique;
     text-align: center;
 }
 
@@ -538,15 +571,15 @@ header {
     height: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 15% 35% 35% 15%;
-    grid-template-areas: 
-    'logga nav nav'   
-    'iteam1 iteam1 iteam1'
-    'iteam2 iteam2 iteam2'
-    'ft ft ft'
+    grid-template-areas:
+        'logga nav nav'
+        'iteam1 iteam1 iteam1'
+        'iteam2 iteam2 iteam2'
+        'ft ft ft'
     ;
 }
 
-.shop1{
+.shop1 {
     grid-area: iteam1;
     display: flex;
     justify-content: center;
@@ -557,15 +590,16 @@ header {
     margin-left: 35%
 }
 
-.shop1 img{
+.shop1 img {
     height: 100%;
     width: 120%;
     border-radius: 20px;
 }
-.shop1 img:hover{
+
+.shop1 img:hover {
     transform: scale(1.1);
     transition: 0.5s;
-    
+
 }
 
 .shop2 {
@@ -578,6 +612,7 @@ header {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
 
 }
+
 .shop2 p {
     font-size: 20px;
     font-weight: bold;
@@ -590,19 +625,20 @@ header {
     width: 48%;
     height: 100%;
     display: flex;
-    }
+}
 
 .shop3 img {
     border-radius: 20px;
     height: 100%;
 }
-.shop3 img:hover{
+
+.shop3 img:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
-    
 
-.shop3 p{
+
+.shop3 p {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -610,10 +646,3 @@ header {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
     border-radius: 20px;
 }
-
-
-
-
-
-
-   
